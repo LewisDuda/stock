@@ -1,0 +1,66 @@
+/* discord color #36393F */
+.time {
+  height: 100%;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F0F0F0;
+}
+.time .button {
+  font-size: 1.5em;
+  cursor: pointer;
+  margin: 0.5em;
+}
+.time .button:hover {
+  color: #F1D00A;
+}
+.time .figure {
+  height: 100%;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.time .figure:hover {
+  color: #F1D00A;
+}
+.time .figure .year {
+  margin-left: 0.5em;
+}
+.time .figure .month {
+  margin: 0 0.5em;
+}
+.time .figure .date {
+  margin-right: 0.5em;
+}
+
+.datepicker.default {
+  position: relative;
+  width: 80%;
+  background-color: transparent !important;
+}
+.datepicker.default .datepicker-viewport {
+  height: 100px;
+  font-size: 1em;
+}
+@media screen and (min-width: 768px) {
+  .datepicker.default .datepicker-viewport {
+    height: 100px;
+    font-size: 1em;
+  }
+}
+.datepicker.default .datepicker-viewport .datepicker-scroll li {
+  color: #3E497A;
+}
+.datepicker.default .datepicker-viewport .datepicker-scroll li:nth-child(6) {
+  color: #F1D00A;
+}
+
+@media screen and (min-width: 768px) {
+  .time .button {
+    font-size: 2em;
+    margin: 1.1em;
+  }
+}/*# sourceMappingURL=style.css.map */

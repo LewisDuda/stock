@@ -1,0 +1,60 @@
+/* discord color #36393F */
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loading .spinner {
+  position: relative;
+}
+.loading .spinner::before, .loading .spinner::after {
+  content: "";
+  position: relative;
+  display: block;
+}
+.loading .spinner::before {
+  -webkit-animation: spinner 2.5s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+          animation: spinner 2.5s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+  width: 3em;
+  height: 3em;
+  background-color: #F1D00A;
+}
+.loading .spinner::after {
+  -webkit-animation: shadow 2.5s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+          animation: shadow 2.5s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+  bottom: -0.5em;
+  height: 0.25em;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+@-webkit-keyframes spinner {
+  50% {
+    border-radius: 50%;
+    transform: scale(0.5) rotate(360deg);
+  }
+  100% {
+    transform: scale(1) rotate(720deg);
+  }
+}
+@keyframes spinner {
+  50% {
+    border-radius: 50%;
+    transform: scale(0.5) rotate(360deg);
+  }
+  100% {
+    transform: scale(1) rotate(720deg);
+  }
+}
+@-webkit-keyframes shadow {
+  50% {
+    transform: scale(0.5);
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@keyframes shadow {
+  50% {
+    transform: scale(0.5);
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}/*# sourceMappingURL=style.css.map */
